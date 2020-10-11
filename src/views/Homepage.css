@@ -1,0 +1,12 @@
+.Homepage {
+    background-image: url(./images/test.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vmin;
+    width: 100%;
+}
+
+.Homepage-nav {
+    float: right;
+}

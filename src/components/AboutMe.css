@@ -1,0 +1,21 @@
+.AboutMe-paragraph {
+    float: left;
+    margin-bottom: 0.5rem;
+}
+
+.AboutMe-container {
+    grid-column-gap: 1rem;
+    display: grid;
+    grid-template-columns: 38.9rem 28.9rem ;
+    text-align: left;
+    height: 20rem;
+}
+
+.AboutMe-image {
+    height: 20rem;
+    /* width: auto; */
+}
+
+.AboutMe-container > .AboutMe-grid-item {
+
+}

@@ -1,0 +1,29 @@
+.TrueFalse {
+    /* margin: 0 auto; */
+}
+
+.TrueFalse-buttons {
+    margin-top: 1rem;
+}
+
+.TrueFalse-answer {
+    font-style: italic;
+}
+
+.true-btn {
+    float: left;
+}
+
+.correct {
+    background: green;
+}
+
+.false-btn {
+    float: right;
+}
+
+.next-btn {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+}
