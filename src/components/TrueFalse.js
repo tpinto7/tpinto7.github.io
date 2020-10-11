@@ -22,16 +22,19 @@ const questions = [
     { question: "WOW! Thank you for going through all my questions :D I hope you enjoyed it and click True/False then next question to restart!", answer: true, caption: ""}
   ]
 
+  // TODO : SCORE after the questions :) 
+
 export class AboutMe extends React.Component {
     state = {
         questionIndex: 0,
         answeredQuestion: false,
         trueButtonStyle: {},
-        falseButtonStyle: {}
+        falseButtonStyle: {},
+        score: 0
     }
 
     checkAnswer = (answer) => {
-        const { questionIndex } = this.state;
+        const { questionIndex, score } = this.state;
         if(questions[questionIndex].answer === answer) {
             if(answer){
                 this.setState({
@@ -39,14 +42,19 @@ export class AboutMe extends React.Component {
                         background: '#3bab2c',
                         borderColor: 'green',
                         color: 'white'
-                }});
+                    },
+                    score: score + 1
+                });
+
             } else {
                 this.setState({
                     falseButtonStyle: {
                         background: '#3bab2c',
                         borderColor: 'green',
                         color: 'white'
-                }});
+                    },
+                    score: score + 1
+                });
             }
         } else {
             if(answer){
@@ -71,6 +79,7 @@ export class AboutMe extends React.Component {
     nextQuestion = () => {
         const {questionIndex} = this.state;
         const newQuestionIndex = (questionIndex + 1) % questions.length;
+        if(newQuestionIndex <= questionIndex) this.setState({score: 0});
         this.setState({
             answeredQuestion: false, 
             questionIndex: newQuestionIndex,
@@ -80,17 +89,18 @@ export class AboutMe extends React.Component {
     }
 
   render(){ 
-    const { questionIndex, answeredQuestion, trueButtonStyle, falseButtonStyle } = this.state;
+    const { questionIndex, answeredQuestion, trueButtonStyle, falseButtonStyle, score } = this.state;
     return (
       <Card type="inner" title="How well do you know me? Let's find out!" className="TrueFalse">
         <div className="TrueFalse-question">
             {questions[questionIndex].question}
         </div>
         { answeredQuestion && <div className="TrueFalse-answer">{questions[questionIndex].caption}</div>}
+        Current Score: {score} / {questionIndex + answeredQuestion}
         <div className="TrueFalse-buttons"> 
-            <Button className="true-btn" style={trueButtonStyle} onClick={() => this.checkAnswer(true)}>True</Button>
+            <Button className="true-btn" disabled={answeredQuestion} style={trueButtonStyle} onClick={() => this.checkAnswer(true)}>True</Button>
             { answeredQuestion && <Button className="next-btn" onClick={() => this.nextQuestion() }>Next Question</Button> }
-            <Button className="false-btn" style={falseButtonStyle} onClick={() => this.checkAnswer(false)} >False</Button>
+            <Button className="false-btn" disabled={answeredQuestion} style={falseButtonStyle} onClick={() => this.checkAnswer(false)} >False</Button>
         </div>
       </Card>
     );

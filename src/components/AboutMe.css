@@ -9,13 +9,10 @@
     grid-template-columns: 38.9rem 28.9rem ;
     text-align: left;
     height: 20rem;
+    margin-bottom: 2rem;
 }
 
 .AboutMe-image {
     height: 20rem;
-    /* width: auto; */
-}
-
-.AboutMe-container > .AboutMe-grid-item {
-
+    width: auto;
 }

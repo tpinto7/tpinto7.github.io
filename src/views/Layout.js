@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutMe from '../components/AboutMe';
+import TrueFalse from '../components/TrueFalse';
 import './Layout.css';
 export class Layout extends React.Component {
   state = {
@@ -16,6 +17,7 @@ export class Layout extends React.Component {
     return (
         <div className="Layout">
             <AboutMe/>
+            <TrueFalse/>
         </div>
     );
   }

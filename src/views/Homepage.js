@@ -1,6 +1,19 @@
 import React from 'react';
-import { Menu, Row, Col } from 'antd';
+import { Menu, Row, Col, Avatar } from 'antd';
+import { GithubOutlined, MailOutlined, LinkedinOutlined, FileOutlined } from '@ant-design/icons';
+import TypeIt from "typeit-react";
 import './Homepage.css';
+import hiking from './images/profile.jpg';
+
+// Credits to https://stackoverflow.com/questions/1484506/random-color-generator
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
 export class Homepage extends React.Component {
   state = {
@@ -17,7 +30,7 @@ export class Homepage extends React.Component {
     return (
       <div className="Homepage">
         <div className="Homepage-nav">
-          <Menu onClick={this.handleClick} selectedKeys={[current]}  mode="horizontal">
+          <nav><Menu onClick={this.handleClick} selectedKeys={[current]}  theme="dark" breakpoint="lg" mode="horizontal">
             <Menu.Item
               key="home">
               
@@ -31,15 +44,33 @@ export class Homepage extends React.Component {
                 Sign In
             </Menu.Item>
           </Menu>
+          </nav>
+
         </div>
         <div className="Homepage-content-wrapper">
+          <Avatar className="Homepage-avatar" size={128} src={hiking}/>
           <h1 className="Homepage-name">Tyler Pinto</h1>
-          <div className="Homepage-description"> I am ... </div>
+          <TypeIt
+            className="Homepage-typeit" 
+            options={{
+              strings: ["Software Engineering at UWaterloo", "Full Stack Dev @ LCBO", "SWE @ Veeva", "SWE @ PointClickCare"],
+              speed: 75,
+              nextStringDelay: 1500,
+              loopDelay: 1500,
+              loop: true,
+              waitUntilVisible: true,
+              breakLines: false,
+              beforeString: function(step, instance) {
+                instance.getElement().style.color = getRandomColor();
+              }
+            }}
+          />
+           
           <Row>
-            <Col span={6}>github</Col>
-            <Col span={6}>email</Col>
-            <Col span={6}>linkedin</Col>
-            <Col span={6}>resume</Col>
+            <Col span={6}><a href="https://github.com/tpinto7"> <GithubOutlined style={{fontSize: '32px', color: 'white' }} /> </a></Col>
+            <Col span={6}><a href="mailto:tjpinto@uwaterloo.ca"> <MailOutlined style={{fontSize: '32px', color: 'white' }}  /> </a></Col>
+            <Col span={6}><a href="https://github.com/tpinto7"> <LinkedinOutlined style={{fontSize: '32px', color: 'white' }} /></a></Col>
+            <Col span={6}><a href="https://github.com/tpinto7"> <FileOutlined style={{fontSize: '32px', color: 'white' }} /></a></Col>
             
           </Row>  
         </div>
