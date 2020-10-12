@@ -38,6 +38,7 @@ export class AboutMe extends React.Component {
                 <div className="AboutMe-paragraph">Feel free to reach out to me for a coffee or a chat! 
                 <b> I am currently seeking co-op opportunities for Summer 2021! </b>
                 </div>  
+                <div className="AboutMe-paragraph">I have extensive experience with Java, JavaScript, and C++ and am practicing my Python skills on Leetcode! </div>
             </div>
             <div className="AboutMe-grid-item AboutMe-pictures">
                 <Carousel autoplay effect="fade">
