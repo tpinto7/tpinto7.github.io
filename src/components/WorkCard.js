@@ -12,9 +12,9 @@ export class WorkCard extends React.Component {
                 dataSource={info.points}
                 renderItem={item => (
                     <List.Item>
-                        <List.Item.Meta
+                        <List.Item.Meta className="metaa"
                         avatar={<Avatar size={32} src={profile} />}
-                        title={<a href="https://ant.design">{item.title}</a>}
+                        title={<a className="collapse-title">{item.title}</a>}
                         description={item}
                         />
                     </List.Item>

@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutMe from '../components/AboutMe';
 import TrueFalse from '../components/TrueFalse';
+import Skills from '../components/Skills';
 import WorkExperience from '../components/WorkExperience';
 import Projects from '../components/Projects';
 import ContactMe from '../components/ContactMe';
@@ -21,6 +22,7 @@ export class Layout extends React.Component {
         <div className="Layout">
             <AboutMe/>
             <TrueFalse/>
+            <Skills/>
             <WorkExperience/>
             <Projects/>
             <ContactMe/>

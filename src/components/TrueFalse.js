@@ -22,7 +22,10 @@ const questions = [
     { question: "WOW! Thank you for going through all my questions :D I hope you enjoyed it and click True/False then next question to restart!", answer: true, caption: ""}
   ]
 
-  // TODO : SCORE after the questions :) 
+const headerStyle = {
+    backgroundColor: '#348AA7',
+    color: 'white !important'
+}
 
 export class AboutMe extends React.Component {
     state = {
@@ -91,7 +94,7 @@ export class AboutMe extends React.Component {
   render(){ 
     const { questionIndex, answeredQuestion, trueButtonStyle, falseButtonStyle, score } = this.state;
     return (
-      <Card type="inner" title="How well do you know me? Let's find out!" className="TrueFalse">
+      <Card headStyle={headerStyle} type="inner" title="How well do you know me? Let's find out!" className="TrueFalse">
         <div className="TrueFalse-question">
             {questions[questionIndex].question}
         </div>

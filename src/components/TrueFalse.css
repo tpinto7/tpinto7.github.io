@@ -31,3 +31,8 @@
     margin: 0 auto;
     /* text-align: left; */
 }
+
+.ant-card-head-title {
+    background-color: #348AA7;
+    color: white !important;
+}

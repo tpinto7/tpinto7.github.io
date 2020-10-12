@@ -1,3 +1,8 @@
 .WorkExperience {
     margin-top: 3rem;
 }
+
+.ant-collapse-header {
+    background-color: #348AA7;
+    color: white !important;
+}

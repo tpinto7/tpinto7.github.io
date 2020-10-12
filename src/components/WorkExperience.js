@@ -4,6 +4,9 @@ import WorkCard from './WorkCard';
 import './WorkExperience.css';
 
 const { Panel } = Collapse;
+const panelStyle = {
+    color: 'white'
+};
 const jobs = [
     {
         name: "LCBO|Next",
@@ -54,10 +57,10 @@ export class WorkExperience extends React.Component {
     return (
       <div id="workExperience" className="WorkExperience">
           <h1 className="WorkExperience-header">Work Experience</h1>
-          <Collapse defaultActiveKey={['0']}>
+          <Collapse defaultActiveKey={['0']} className="coll">
             
             { jobs.map((job) => {
-                return <Panel header={job.role + ' @ ' + job.name}> 
+                return <Panel style={panelStyle} header={job.role + ' @ ' + job.name}> 
                     <WorkCard info={job}/>
                 </Panel>
 
