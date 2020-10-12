@@ -22,7 +22,7 @@ const images = [
 export class AboutMe extends React.Component {
   render(){ 
     return (
-      <div className="AboutMe">
+      <div id="aboutMe" className="AboutMe">
         <h1 className="AboutMe-header">Nice to meet you! Here's a little bit about me ...</h1>
         <div className="AboutMe-container">
             <div className="AboutMe-grid-item AboutMe-text">
