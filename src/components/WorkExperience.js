@@ -52,7 +52,7 @@ export class WorkExperience extends React.Component {
 
   render(){ 
     return (
-      <div className="WorkExperience">
+      <div id="workExperience" className="WorkExperience">
           <h1 className="WorkExperience-header">Work Experience</h1>
           <Collapse defaultActiveKey={['0']}>
             

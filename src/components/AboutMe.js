@@ -2,6 +2,10 @@ import React from 'react';
 import {Carousel} from 'antd';
 import './AboutMe.css';
 
+import kayak from './images/kayak.jpg';
+import hiking from './images/hiking.jpg';
+import house from './images/kayak.jpg';
+
 import birthday from './images/birthday.png';
 import guardian from './images/Guardian.jpg';
 import lotulim from './images/lotulim.png';
@@ -15,8 +19,8 @@ import rome from './images/rome.jpg';
 import soccer from './images/soccer.jpg';
 
 const images = [
-    birthday, guardian, lotulim, christmas,
-    bj, erb, gp, grad, pats, rome, soccer
+    kayak, bj, hiking, guardian, birthday, lotulim, christmas,
+    house, erb, gp, grad, pats, rome, soccer
 ]
 
 export class AboutMe extends React.Component {

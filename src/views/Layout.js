@@ -3,6 +3,7 @@ import AboutMe from '../components/AboutMe';
 import TrueFalse from '../components/TrueFalse';
 import WorkExperience from '../components/WorkExperience';
 import Projects from '../components/Projects';
+import ContactMe from '../components/ContactMe';
 import './Layout.css';
 export class Layout extends React.Component {
   state = {
@@ -22,6 +23,7 @@ export class Layout extends React.Component {
             <TrueFalse/>
             <WorkExperience/>
             <Projects/>
+            <ContactMe/>
         </div>
     );
   }

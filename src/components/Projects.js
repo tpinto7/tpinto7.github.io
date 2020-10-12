@@ -91,7 +91,7 @@ export class Projects extends React.Component {
 
   render(){ 
     return (
-      <div className="WorkExperience">
+      <div id="projects" className="WorkExperience">
           <h1 className="WorkExperience-header">Projects</h1>
           <Collapse defaultActiveKey={['0', '1']}>
             
