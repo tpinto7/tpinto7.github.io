@@ -13,6 +13,7 @@
 
 .true-btn {
     float: left;
+    margin-right: 1rem;
 }
 
 .correct {
@@ -20,11 +21,13 @@
 }
 
 .false-btn {
-    float: right;
+    /* float: right; */
+    margin-right: 3rem;
 }
 
 .next-btn {
-    display: inline-block;
+    /* display: inline-block; */
+    /* float: right; */
     margin: 0 auto;
-    text-align: left;
+    /* text-align: left; */
 }

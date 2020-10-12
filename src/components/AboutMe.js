@@ -29,7 +29,7 @@ export class AboutMe extends React.Component {
                 <div className="AboutMe-paragraph">
                     Hey! My name is Tyler and I am a third year software engineering student at Waterloo! 
                 </div>
-                <div className="AboutMe-paragraph">I enjoy creating scalable and modular software for useful and relevant applications. I am currently working as a full stack developer at LCBO|Next, LCBO's Innovation Lab where I am rapidly creating solutions to 
+                <div className="AboutMe-paragraph">I enjoy creating scalable and modular software for useful and relevant applications. I am currently working as a full stack developer at LCBO|Next, LCBO's Innovation Lab, where I am rapidly creating solutions to 
                 ease customers' and store owner's pain points during the pandemic. Previously, I worked as a software engineer at Veeva and PointClickCare, both companies in the healthcare and life sciences industries, where I was able to create 
                 microservices and RESTful APIs for hundreds of hospitals and pharmaceutical companies. 
                 </div>
@@ -38,7 +38,7 @@ export class AboutMe extends React.Component {
                 <div className="AboutMe-paragraph">Feel free to reach out to me for a coffee or a chat! 
                 <b> I am currently seeking co-op opportunities for Summer 2021! </b>
                 </div>  
-                <div className="AboutMe-paragraph">I have extensive experience with Java, JavaScript, and C++ and am practicing my Python skills on Leetcode! </div>
+                <div className="AboutMe-paragraph">I have extensive experience with Java, JavaScript, and C++ through work and projects and am practicing my Python skills on Leetcode! </div>
             </div>
             <div className="AboutMe-grid-item AboutMe-pictures">
                 <Carousel autoplay effect="fade">

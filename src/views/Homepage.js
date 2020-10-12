@@ -4,6 +4,7 @@ import { GithubOutlined, MailOutlined, LinkedinOutlined, FileOutlined } from '@a
 import TypeIt from "typeit-react";
 import './Homepage.css';
 import hiking from './images/profile.jpg';
+import { Animated } from 'react-animated-css';
 
 // Credits to https://stackoverflow.com/questions/1484506/random-color-generator
 function getRandomColor() {
@@ -49,7 +50,9 @@ export class Homepage extends React.Component {
         </div>
         <div className="Homepage-content-wrapper">
           <Avatar className="Homepage-avatar" size={128} src={hiking}/>
-          <h1 className="Homepage-name">Tyler Pinto</h1>
+          <Animated animationIn="bounceInDown" animationInDelay={1000}>
+            <h1 className="Homepage-name">Tyler Pinto</h1>
+          </Animated>
           <TypeIt
             className="Homepage-typeit" 
             options={{

@@ -99,8 +99,8 @@ export class AboutMe extends React.Component {
         Current Score: {score} / {questionIndex + answeredQuestion}
         <div className="TrueFalse-buttons"> 
             <Button className="true-btn" disabled={answeredQuestion} style={trueButtonStyle} onClick={() => this.checkAnswer(true)}>True</Button>
-            { answeredQuestion && <Button className="next-btn" onClick={() => this.nextQuestion() }>Next Question</Button> }
             <Button className="false-btn" disabled={answeredQuestion} style={falseButtonStyle} onClick={() => this.checkAnswer(false)} >False</Button>
+            { answeredQuestion && <Button className="next-btn" onClick={() => this.nextQuestion() }>Next Question</Button> }
         </div>
       </Card>
     );

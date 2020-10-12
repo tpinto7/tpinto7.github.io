@@ -1,0 +1,35 @@
+.ProjectCard {
+    font-size: 16px;
+}
+
+.ProjectCard-container {
+    grid-column-gap: 1rem;
+    display: grid;
+    grid-template-columns: 28.9rem 38.9rem ;
+    text-align: left;
+    height: 20rem;
+}
+
+.ProjectCard-awards {
+    padding-top: 2rem;
+}
+.ProjectCard-links-wrapper {
+    position: relative;
+    top: 4.5rem;
+    grid-column-gap: 2rem;
+    display: grid;
+    grid-template-columns: 4.9rem 4.9rem;
+    text-align: center;
+    /* height: rem;   */
+}
+
+.ProjectCard-links {
+    padding: 1rem;
+    border-radius: 1rem;
+    background:#f0f0f0;
+    box-shadow: 0px 0px 20px rgba(92, 92, 92, 0.5);
+}
+
+.ProjectCard-pictures {
+    padding: 0 2rem;
+}
