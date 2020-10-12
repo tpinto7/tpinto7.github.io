@@ -15,7 +15,7 @@ function getRandomColor() {
   //   color += letters[Math.floor(Math.random() * 16)];
   // }
   // return color;
-  color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
+  const color = "hsl(" + Math.random() * 360 + ", 100%, 75%)";
   return color;
 }
 
