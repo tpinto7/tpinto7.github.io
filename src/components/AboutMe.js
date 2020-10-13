@@ -37,7 +37,7 @@ export class AboutMe extends React.Component {
                 ease customers' and store owner's pain points during the pandemic. Previously, I worked as a software engineer at Veeva and PointClickCare, both companies in the healthcare and life sciences industries, where I was able to create 
                 microservices and RESTful APIs for hundreds of hospitals and pharmaceutical companies. 
                 </div>
-                <div className="AboutMe-paragraph">I also enjoy problem solving and as a result am on track to get a joint major in combinatorics and optimization. During my free time, I love to play soccer and many other sports, going on trips with friends or family, hanging out with my dog, and catching up on new shows.
+                <div className="AboutMe-paragraph">I also enjoy problem solving and as a result am on track to get a joint major in combinatorics and optimization and minor in AI. During my free time, I love to play soccer and many other sports, going on trips with friends or family, hanging out with my dog, and catching up on new shows.
                 </div>
                 <div className="AboutMe-paragraph">Feel free to reach out to me for a coffee or a chat! 
                 <b> I am currently seeking co-op opportunities for Summer 2021! </b>

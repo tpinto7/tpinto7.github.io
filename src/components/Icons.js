@@ -13,8 +13,8 @@ export class Icons extends React.Component {
       <Row style={{marginTop: '2rem' }}>
         <Col span={6}><a href="https://github.com/tpinto7"> <GithubOutlined style={this.iconStyle} /> </a></Col>
         <Col span={6}><a href="mailto:tjpinto@uwaterloo.ca"> <MailOutlined style={this.iconStyle}  /> </a></Col>
-        <Col span={6}><a href="https://github.com/tpinto7"> <LinkedinOutlined style={this.iconStyle} /></a></Col>
-        <Col span={6}><a href="https://github.com/tpinto7"> <FileOutlined style={this.iconStyle} /></a></Col>
+        <Col span={6}><a href="https://www.linkedin.com/in/tylerpinto/"> <LinkedinOutlined style={this.iconStyle} /></a></Col>
+        <Col span={6}><a onClick={ () => window.location.href = 'TylerPinto_Resume.pdf'}> <FileOutlined style={this.iconStyle} /></a></Col>
       </Row>  
     );
   }
