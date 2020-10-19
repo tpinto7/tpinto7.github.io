@@ -1,6 +1,6 @@
 import React from 'react';
 import { List, Avatar } from 'antd';
-import profile from './images/profile.jpg';
+import profile from './images/profileIcon.jpg';
 export class WorkCard extends React.Component {
 
     render(){ 

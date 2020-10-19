@@ -1,6 +1,5 @@
 import React from 'react';
 import { List, Avatar, Carousel } from 'antd';
-import profile from './images/profile.jpg';
 import './ProjectCard.css';
 import image from './images/kayak.jpg';
 import {GithubOutlined} from '@ant-design/icons';

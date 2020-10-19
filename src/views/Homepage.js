@@ -4,7 +4,7 @@ import { DownCircleOutlined } from '@ant-design/icons';
 import TypeIt from "typeit-react";
 import './Homepage.css';
 import Icons from '../components/Icons';
-import profile from './images/profile.jpg';
+import profile from './images/profileIcon.jpg';
 import { Animated } from 'react-animated-css';
 
 // Credits to https://stackoverflow.com/questions/23601792/get-only-light-colors-randomly-using-javascript
@@ -56,7 +56,7 @@ export class Homepage extends React.Component {
 
         </div>
         <div className="Homepage-content-wrapper">
-          <Avatar className="Homepage-avatar" spin={true} size={128} src={profile}/>
+          <Avatar className="Homepage-avatar" spin={true} size={156} src={profile}/>
           <Animated animationIn="bounceInDown" animationInDelay={1000}>
             <h1 className="Homepage-name">Tyler Pinto</h1>
           </Animated>
